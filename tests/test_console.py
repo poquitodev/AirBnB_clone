@@ -101,8 +101,7 @@ class TestHBNBCommand_help(unittest.TestCase):
             self.assertEqual(h, output.getvalue().strip())
 
     def test_help_destroy(self):
-        h = "Delete a class instance of a given id, save result"
-             " to json file"
+        h = "Delete a class instance of a given id, save result to json file"
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help destroy"))
             self.assertEqual(h, "Usage: destroy <class> <id> or <class>.destroy(<id>)\n"
