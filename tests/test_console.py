@@ -127,6 +127,7 @@ class TestHBNBCommand_help(unittest.TestCase):
         self.assertEqual(h, output.getvalue().strip())
 
 
+
     def test_help(self):
         h = "Documented commands (type help <topic>):\n"
              "========================================\n"
