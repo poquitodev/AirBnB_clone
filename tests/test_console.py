@@ -108,8 +108,7 @@ class TestHBNBCommand_help(unittest.TestCase):
             self.assertEqual(h, output.getvalue().strip())
 
     def test_help_all(self):
-        h = "Prints all string representation of all instances based or"
-             " not on the class name")
+        h = "Prints all string representation of all instances based not on the class name"
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help all"))
             self.assertEqual(h, output.getvalue().strip())
